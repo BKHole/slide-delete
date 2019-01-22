@@ -1,0 +1,14 @@
+<view class="item-wrapper" wx:for="{{list}}" wx:key="{{item.id}}">
+  <slide-delete pid="{{item.id}}" bindaction="handleSlideDelete" wx:key="{{item.id}}">
+    <view class="item">
+      <view class="left">
+        <view class="name">{{item.name}}</view>
+        <view class="code">{{item.code}}</view>
+      </view>
+      <view class="right">
+        <text class="amount">{{item.amount}}</text>
+        <text class="unit">万</text>
+      </view>
+    </view>
+  </slide-delete>
+</view>

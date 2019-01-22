@@ -1,0 +1,31 @@
+.wrap {
+  position: relative;
+  width: 100%;
+}
+
+movable-area {
+  height: 120rpx;
+  width: calc(100% - 120rpx);
+}
+
+movable-view {
+  height: 120rpx;
+  width: calc(100% + 120rpx);
+  background: #fff;
+  z-index: 999;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 120rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 120rpx;
+  z-index: 1;
+  background: #e66671;
+  text-align: center;
+}

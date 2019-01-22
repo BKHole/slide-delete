@@ -1,0 +1,8 @@
+<view class="wrap">
+  <movable-area>
+    <movable-view out-of-bounds="true" direction="horizontal" x="{{xmove}}" inertia="true" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindchange="handleMovableChange">
+      <slot />
+    </movable-view>
+  </movable-area>
+  <view class="delete-btn"  bindtap="handleAction">删除</view>
+</view>
